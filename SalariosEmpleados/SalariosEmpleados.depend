@@ -45,3 +45,49 @@
 	<vector>
 	"Empleado.h"
 
+1778708934 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\desarrolladorjunior.cpp
+	"DesarrolladorJunior.h"
+
+1778709591 c:\users\rojas\onedrive\escritorio\repo\salariosempleados\desarrolladorjunior.h
+	"Empleado.h"
+
+1778709227 c:\users\rojas\onedrive\escritorio\repo\salariosempleados\empleado.h
+	<string>
+
+1778710250 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\desarrolladorsenior.cpp
+	"DesarrolladorSenior.h"
+
+1778710114 c:\users\rojas\onedrive\escritorio\repo\salariosempleados\desarrolladorsenior.h
+	"Empleado.h"
+
+1778710327 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\empleado.cpp
+	"Empleado.h"
+
+1778710334 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\lidertecnico.cpp
+	"LiderTecnico.h"
+
+1778710124 c:\users\rojas\onedrive\escritorio\repo\salariosempleados\lidertecnico.h
+	"Empleado.h"
+
+1778715642 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\nomina.cpp
+	<iostream>
+	"Nomina.h"
+	"DesarrolladorJunior.h"
+	"DesarrolladorSenior.h"
+	"LiderTecnico.h"
+	"Tester.h"
+
+1778714188 c:\users\rojas\onedrive\escritorio\repo\salariosempleados\nomina.h
+	<vector>
+	"Empleado.h"
+
+1778713609 c:\users\rojas\onedrive\escritorio\repo\salariosempleados\tester.h
+	"Empleado.h"
+
+1778713624 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\tester.cpp
+	"Tester.h"
+
+1778725217 source:c:\users\rojas\onedrive\escritorio\repo\salariosempleados\main.cpp
+	<iostream>
+	"Nomina.h"
+

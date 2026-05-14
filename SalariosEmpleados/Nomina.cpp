@@ -13,14 +13,14 @@ Nomina::Nomina(){ // Implemento Nomina para que inicialice los datos a la hora d
 
 void Nomina::inicializarDatos() { // Instancio lo empleados y les asigno sus parametros
 
-    Empleado* e1 = new DesarrolladorJunior("Carlos Rojas",   20000);
-    Empleado* e2 = new DesarrolladorJunior("Ana Martinez",   22000);
-    Empleado* e3 = new DesarrolladorSenior("Pedro Ramirez",  40000);
-    Empleado* e4 = new DesarrolladorSenior("Laura Gomez",    45000);
-    Empleado* e5 = new LiderTecnico("Jorge Torres",          60000);
-    Empleado* e6 = new LiderTecnico("Jorge Torres",          60000);
-    Empleado* e7 = new LiderTecnico("Jorge Torres",          60000);
-    Empleado* e8 = new LiderTecnico("Jorge Torres",          60000);
+    Empleado* e1 = new DesarrolladorJunior("Carlos Rojas", 20000);
+    Empleado* e2 = new DesarrolladorJunior("Juan Jose", 22000);
+    Empleado* e3 = new DesarrolladorSenior("Martin Henao", 40000);
+    Empleado* e4 = new DesarrolladorSenior("Juan Manuel", 45000);
+    Empleado* e5 = new LiderTecnico("Joseph Andres", 56000);
+    Empleado* e6 = new LiderTecnico("Camilo Camacho", 67000);
+    Empleado* e7 = new LiderTecnico("Luis Fernando", 80000);
+    Empleado* e8 = new LiderTecnico("Juan Daniel", 90000);
 
     empleados.push_back(e1); // Luego agrego cada empleado al vector empleados
     empleados.push_back(e2);
