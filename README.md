@@ -16,18 +16,28 @@ En este proyecto la clase base es Empleado, la tomo como clase padre, ya que Des
 
 ¿Qué método se sobrescribe en las clases derivadas?
 
+En la clase padre se declaran "virtual double calcularSalario() const = 0" y "virtual string getTipo() const = 0"  como métodos virtuales puros, los cuales las clases hijas están obligadas a sobrescribir por medio de override. Cabe aclarar que cada clase los implementa a su manera, por ejemplo calcularSalario() varía según el tipo de empleado, por ejemplo, DesarrolladorJunior no tiene bono, DesarrolladorSenior aplica un 20%, LiderTecnico un 25% y Tester un 5%.
+
 ¿Dónde se evidencia el polimorfismo en el programa?
 
+El polimorfismo se hace evidente en la clase Nomina, más exactamente en los ciclos for donde se recorre el vector empleados. Este vector almacena punteros de tipo Empleado*, pero en inicializarDatos() lo que realmente se guarda son punteros a objetos de las clases hijas como DesarrolladorJunior o LiderTecnico. Cuando el ciclo llama a e->calcularSalario(), gracias a que el método es virtual, se detecta qué tipo de objeto es realmente y ejecuta la versión correcta, todo desde el mismo ciclo sin que Nomina tenga que saber qué tipo específico es cada empleado.
+
 ¿Por qué sería menos adecuado resolver este ejercicio con muchos if o switch para identificar el tipo de empleado?
+
+Es menos adecuado resolverlo con if o switch, ya que Nomina tendría que preguntarle a cada empleado qué tipo es para saber qué fórmula aplicar, cuando esa responsabilidad le pertenece a cada clase. El otro problema está en la escalabilidad, ya que al momento de agregar un nuevo tipo de empleado habría que buscar y modificar todos los if dispersos en el código. En cambio, con el diseño actual solo tocaría crear una nueva clase hija que herede de Empleado y sobrescriba los métodos, sin necesidad de tocar Nomina para nada.
 
 # Explique una dificultad que apareció durante la actividad
 Qué problema apareció?
 
+Cuando ejecutaba el programa me daban varios errores como problemas con un destructor, a veces escribia mal los nombres de los atributos y los metodos, a veces se me olvidaba poner los include en los archivos y por ulitmo la correcta implementacion de los metodos virtuales puros.
+
 Qué parte del código estaba relacionada con el problema.
+
+El problema del destructor estaba en Empleado.h. La mala escritura de los atributos, metodos e includes me paso en muchas partes de los archivos. El problema de los metodos virtuales puros estaba en Empleado.h
 
 Cómo lo corrigió o qué entendió después de revisarlo.
 
-Dificultad, a veces confundia nombres de las clases y atributos
+En el destructor de Empleado no habia puesto " = default;". Con la mala escritura metocaba ser muy cuidadoso y estar mendiente a las pistas que me daba la consola para poder corregir. Por ultimo para los metodos virtuales puros me falto poner " = 0;", ya que ese me sirve para volver Empleados en clase abstracta y obligar a las clases hijas a implementar ese metodo.
 
 # Declaración de uso de IA
 
@@ -46,4 +56,4 @@ Anteriormente lo que hubiera hecho es crear cada clase de forma independiente, r
 
 Qué cambié o adapté:
 
-Luego de entender cómo funcionaba el polimorfismo y la herencia gracias a la explicación de la IA, pude centrarme mejor en cómo estructurar y desarrollar mi código de manera correcta. Hice uso de la actividad anterior de figuras geométricas para apoyarme, la cual ya había trabajado con una estructura similar de clase base y clases hijas , lo que me sirvió como referencia para desarrollar mi proyectoese. Además, conté con la ayuda de mi compañero Joseph Andrés, quien me resolvió varias dudas
+Luego de entender cómo funcionaba el polimorfismo y la herencia gracias a la explicación de la IA, pude centrarme mejor en cómo estructurar y desarrollar mi código de manera correcta. Hice uso de la actividad anterior de figuras geométricas para apoyarme, la cual ya había trabajado con una estructura similar de clase base y clases hijas , lo que me sirvió como referencia para desarrollar mi proyecto. Además, conté con la ayuda de mi compañero Joseph Andrés, quien me resolvió varias dudas.
