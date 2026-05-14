@@ -19,8 +19,8 @@ void Nomina::inicializarDatos() { // Instancio lo empleados y les asigno sus par
     Empleado* e4 = new DesarrolladorSenior("Juan Manuel", 45000);
     Empleado* e5 = new LiderTecnico("Joseph Andres", 56000);
     Empleado* e6 = new LiderTecnico("Camilo Camacho", 67000);
-    Empleado* e7 = new LiderTecnico("Luis Fernando", 80000);
-    Empleado* e8 = new LiderTecnico("Juan Daniel", 90000);
+    Empleado* e7 = new Tester("Luis Fernando", 80000);
+    Empleado* e8 = new Tester("Juan Daniel", 90000);
 
     empleados.push_back(e1); // Luego agrego cada empleado al vector empleados
     empleados.push_back(e2);
